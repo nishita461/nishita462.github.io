@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My STEM Archive</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background: #f4f4f4; color: #333; }
+        .low-data { background: #fff; color: #000; border: 2px solid #000; }
+        button { padding: 10px; cursor: pointer; background: #4A90E2; color: white; border: none; border-radius: 5px; }
+        .box { background: white; padding: 15px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body id="main-body">
+
+    <h1>My STEM & Self-Inquiry Library</h1>
+    <p>Hi, I'm a student from India. I built this site to be super fast on 3G/4G internet and to track my learning process.</p>
+
+    <button onclick="toggleData()">Toggle Low-Data Mode (Text Only)</button>
+
+    <div class="box">
+        <h2>My "Audit Journal" Experiments</h2>
+        <ul>
+            <li><strong>Morning vs. Night:</strong> My data shows I solve CS problems 2x faster at 12 AM.</li>
+            <li><strong>The Bandwidth Test:</strong> Currently optimizing this page to stay under 20KB.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>STEM Resources</h2>
+        <p>I am currently uploading my notes for Physics and CS. Check back soon!</p>
+    </div>
+
+    <script>
+        function toggleData() {
+            var element = document.getElementById("main-body");
+            element.classList.toggle("low-data");
+            alert("Low Data Mode: Images/Styles simplified for slow internet.");
+        }
+    </script>
+
+</body>
+</html>
